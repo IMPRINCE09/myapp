@@ -1,38 +1,213 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+ 
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #121212;
+    height: 5rem;
+    align-items: center;
+    
+}
+.container > .left-data  > h1{
+color: white;
+margin: 0 30px;
+}
+.container > .right-data > ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    margin: 0 30px ;
+    cursor: pointer;
+
+}
+ 
+.container > .right-data > ul > a{
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.right-hero-data{
+    width: 500px;
+    margin-left: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.container-hero{
+    display: grid;
+  grid-template-columns: 1fr 1fr ;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+    background-color: #121212;
+    height: 86vh;
+padding: 15px;
+     
+}
+.left-hero-data {
+    margin: 0 30px;
+}
+.left-hero-data > h1{
+    color: #ffffff;
+}
+.left-hero-data > h2{
+
+    font-size: 4.5rem;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        margin-bottom: 20px ;
+}
+.left-hero-data > p{
+    color: white;
+    margin-bottom: 20px ;
+    
+}
+.left-hero-data > button{
+    padding: 11px 22px;
+    font-size: 1.2rem;
+
+}
+
+.left-about-data{
+    width: 500px;
+}
+
+/* About */
+
+.container-about{
+    background-color: #121212;
+    margin-bottom: 6px;
+}
+.aboute-data{
+    display: flex;
+    margin-top: 1rem;
+    
+
+}
+.right-about-data{
+    
   color: white;
+  width: 50%;
+  padding: 15px;
+}
+.right-about-data>h1{
+    text-align: center;
+    margin: 7rem 0;
+    font-size: 3rem;
+    background-image: linear-gradient(to left, #69fe4f 20%, #fadc15 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 20px ;
+}
+.right-about-data >p{
+    text-align: center;
+    
+}
+/* conatct */
+.contact{
+    box-sizing: border-box;
+  
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 15rem;
+    /* background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-54583.jpg") ; */
+    background-color: #121212;
+    
+     
+
+}
+.left-contact{
+  
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+}
+.left-contact > h1{
+    color: white;
+}
+.conatct-details{
+ 
+    width: 25rem;
+   margin: 10px;
+   height: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn{
+    width: 25rem;
+   margin: 10px;
+   height: 30px;
+   background-color: #14f798;
+   border: none;
+   border-radius: 4px;
+   
+}
+.right-contact{
+    margin:   0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* blog */
+
+.main-section{
+    display: flex;
+    background-color: #121212;
+    height: 35rem;
+
+}
+.main-section-left{
+    
+   color: #ffffff;
+   justify-content: center;
+   text-align: center;
+   margin: 10rem 0 0 7rem;
+   width: 500px;
+
+}
+
+/* Services */
+.section-card >h2{
+   color: #ffff;
+   background-color: #121212;
+   justify-content: center;
+   text-align: center;
+  
+
+}
+.card{
+    /* background-image: url("https://images.pexels.com/photos/262333/pexels-photo-262333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+    background-color: #121212;
+    /* opacity: 0.9; */
+    height: 36rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    
+    
+}
+
+.card-details{
+
+    background-color: #ffff;
+    height: 18rem;
+    width: 200px;
+    padding: 10px;
+    margin:10px 40px;
+    box-shadow: 4px 10px 20px 2px #eeefb9 ;
+
+    
+    
+    
 }
